@@ -1,3 +1,8 @@
+Docker ile çalıştırmak isterseniz : 
+İmaja şu komut ile erişebilirsiniz: docker pull mehmeterkek/my-angular-app:latest
+İmajı çektikten sonra şu komutla çalıştırabilirsiniz : docker run -d -p 8080:80 mehmeterkek/my-angular-app:latest
+
+
 # RickAndMortyAngular
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.3.
