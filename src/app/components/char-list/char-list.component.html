@@ -1,24 +1,27 @@
 <div class="filter-area">
-  
+
 
   <div class="flex align-items-center">
-    <p-checkbox  label="Male" value="Male" [(ngModel)]="selectedMale"
-      binary="true"></p-checkbox>
+    <p-checkbox label="Male" value="Male" [(ngModel)]="selectedMale" binary="true"></p-checkbox>
   </div>
   <div class="flex align-items-center">
-    <p-checkbox label="Female" value="Female" [(ngModel)]="selectedFemale" binary="true" (ngModelChange)="filterCharacters()"></p-checkbox>
+    <p-checkbox label="Female" value="Female" [(ngModel)]="selectedFemale" binary="true"
+      (ngModelChange)="filterCharacters()"></p-checkbox>
   </div>
   <div class="flex align-items-center">
-    <p-checkbox label="Alive" value="Alive" [(ngModel)]="selectedAlive" binary="true" (ngModelChange)="filterCharacters()"></p-checkbox>
+    <p-checkbox label="Alive" value="Alive" [(ngModel)]="selectedAlive" binary="true"
+      (ngModelChange)="filterCharacters()"></p-checkbox>
 
   </div>
   <div class="flex align-items-center">
-    <p-checkbox label="Dead" value="Dead" [(ngModel)]="selectedDead" binary="true" (ngModelChange)="filterCharacters()"></p-checkbox>
+    <p-checkbox label="Dead" value="Dead" [(ngModel)]="selectedDead" binary="true"
+      (ngModelChange)="filterCharacters()"></p-checkbox>
   </div>
 
   <div class="flex align-items-center">
-    <p-autoComplete [(ngModel)]="selectedCharacter" [suggestions]="filteredCharacters" (ngModelChange)="searchCharacters($event)"
-      (completeMethod)="searchCharacters($event)" field="name" placeholder="Search for a character">
+    <p-autoComplete [(ngModel)]="selectedCharacter" [suggestions]="filteredCharacters"
+      (ngModelChange)="searchCharacters($event)" (completeMethod)="searchCharacters($event)" field="name"
+      placeholder="Search for a character">
     </p-autoComplete>
   </div>
 </div>
@@ -36,7 +39,8 @@
             </span>
           </p>
           <p style="font-size: 25px; margin-top: 0px;"><strong style="font-size: 18px;">Last known location:</strong>
-            <br> {{character.location.name}}</p>
+            <br> {{character.location.name}}
+          </p>
           <p style="font-size: 25px; margin-top: 0px;"><strong style="font-size: 18px;">First seen in:</strong> <br>
             {{character.episodeName}}</p>
         </div>
